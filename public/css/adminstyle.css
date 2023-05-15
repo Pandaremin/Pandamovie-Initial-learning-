@@ -1,0 +1,158 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#131720;
+    --secondary-color: #151f30;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px; }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 5px;
+    height: 100px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: blue; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: blue; 
+  }
+
+body{
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    
+}
+
+.formbox{
+    padding: 18px 18px;
+    border-radius: 20px;
+    border: 2px solid #151f30;
+    /* margin: 5% 0; */
+    /* width: 80%;
+    margin: auto; */
+}
+.form-control{
+    border-radius: 20px;background-color: #151f30;border:0px solid blue;outline: none;padding:10px 25px;color:white;font-size:18px;
+    height: 3rem;
+}
+.form-control:focus {
+    border-radius: 20px;
+    border:1px solid blue;
+    background-color: #151f30;
+  box-shadow: 0 0 0 0 #131720 inset, 0 0 8px #131720;
+  outline: 0 none;
+  color:white;
+    
+  }
+  .form-control::placeholder{
+    color: white;
+    opacity: 1;   
+  }
+#txtComment::focus{
+    border:1px solid blue;
+}
+    
+tr{
+    color:white;
+
+}
+.btncolor{
+    background-color: blue;
+    color: white;
+    border:0px;
+}
+.btncard{
+    background-color: #131720;
+    color: white;
+    border:0px;
+    width:auto;
+    height:fit-content;
+    font-size: 14px;
+    /* position: absolute;
+    right: 20px;
+    top: 20px; */
+    
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1.5px solid #131720;
+  }
+tr:hover {background-color: #131720;}
+.btn:hover{
+    background-color: rgb(88, 28, 255);
+    color: white;
+    border:0px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+table{
+    background-color: #151f30;
+    border-radius: 5px;
+}
+.tr{
+    margin:10px 0;
+}
+
+.ta{
+    background-color: rgb(15, 15, 51);
+    color:white;
+}
+.ta:focus{
+    background-color: rgb(15, 15, 51);
+    color:white;
+}
+.ta{
+    margin-bottom: 10px;
+}
+.card{
+    border-radius: 10px;
+}
+
+.card1,.card2{
+    color: white;
+    background-color: #151f30;
+}
+
+@media (min-width: 1200px) {
+    #wrapper {padding:0px 100px;} 
+    .formbox {margin: 3%;} 
+}
+@media (min-width: 992px) {
+    #wrapper {padding:0px 90px;}  
+    .formbox {margin: 3%;}
+}
+@media (min-width: 769px) {
+    #wrapper {padding:0px 70px;}  
+    .formbox {margin: 3%;}
+}
+@media (min-width: 576px) {
+    #wrapper {padding:0px 50px;}  
+    .formbox {margin: 3% 0;}
+}
+@media (min-width: 360px) {
+    #wrapper {padding:0px 10px;}
+    .formbox {margin: 3% 0;}  
+}
